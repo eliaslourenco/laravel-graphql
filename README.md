@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
+## Sobre a implementaçao do Graphql,
+Estudo realizado em treinamento na Udemy.
+
+Utilizei a lib realizada pelo Rebing (https://github.com/rebing/graphql-laravel)
+Lá possui a documentação completa.
+
+Para testar as rotas via browser utilizar a rota graphiql
+EX:
+http://127.0.0.1:8000/graphiql
+Para consumir o graphql passar a query ou mutation como parametro "query" na rota graphql/
+EX:
+http://127.0.0.1:8000/graphql?query=query{%20user_query(id:%2092)%20{%20id,%20name%20}%20}
+
+Via Postman (Post)
+Podemos utilizar o método post e mandar o json via body ex:
+{
+    "query": '{user_query(id:94){id, posts{user_id} }}'
+}
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

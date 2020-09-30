@@ -3,9 +3,16 @@
 declare(strict_types=1);
 
 use App\GraphQL\Types\UserType;
+use App\GraphQL\Types\PostType;
 
 
 use App\GraphQL\Queries\UserQuery;
+use App\GraphQL\Queries\PostQuery;
+use App\GraphQL\Queries\UserPaginateQuery;
+
+use App\GraphQL\Mutations\PostMutation;
+use App\GraphQL\Mutations\UserMutation;
+
 return [
 
     // The prefix for routes
@@ -100,10 +107,13 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'user_query' => UserQuery::class
+                'user_query' => UserQuery::class,
+                'user_paginate' => UserPaginateQuery::class,
+                'post_query' => PostQuery::class
             ],
             'mutation' => [
-                // 'example_mutation'  => ExampleMutation::class,
+                'post_mutation' => PostMutation::class,
+                'user_mutation' => UserMutation::class
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
@@ -121,6 +131,7 @@ return [
     //
     'types' => [
         'user_type' => UserType::class,
+        'post_type' => PostType::class
         // 'example'           => ExampleType::class,
         // 'relation_example'  => ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,

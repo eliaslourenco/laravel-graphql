@@ -33,6 +33,10 @@ class UserType extends GraphQLType
                 'type' => Type::string(), // parametro do tipo inteiro obrigatorio!
                 'description' => 'Id do usuário do banco de dados' // Consigo adicionar uma descricao do argumento
 
+            ],
+            'posts' => [
+                'type' => Type::listOf(GraphQL::type('post_type')),
+                'description' => 'Posts por usuario'
             ]
         ];
     }
