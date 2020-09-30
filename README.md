@@ -11,7 +11,7 @@
 ## Sobre a implementaçao do Graphql
 Estudo realizado em treinamento na Udemy.
 
-Utilizei a lib realizada pelo Rebing (https://github.com/rebing/graphql-laravel)
+Utilizei a lib realizada do Rebing (https://github.com/rebing/graphql-laravel)
 Lá possui a documentação completa.<Br><br>
 
 # Testando as rotas
