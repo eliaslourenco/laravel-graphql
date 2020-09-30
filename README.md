@@ -8,24 +8,27 @@
 </p>
 
 
-## Sobre a implementaçao do Graphql,
+## Sobre a implementaçao do Graphql
 Estudo realizado em treinamento na Udemy.
 
 Utilizei a lib realizada pelo Rebing (https://github.com/rebing/graphql-laravel)
-Lá possui a documentação completa.
+Lá possui a documentação completa.<Br><br>
 
-Para testar as rotas via browser utilizar a rota graphiql
-EX:
-http://127.0.0.1:8000/graphiql
-Para consumir o graphql passar a query ou mutation como parametro "query" na rota graphql/
-EX:
-http://127.0.0.1:8000/graphql?query=query{%20user_query(id:%2092)%20{%20id,%20name%20}%20}
+# Testando as rotas
 
-Via Postman (Post)
-Podemos utilizar o método post e mandar o json via body ex:
-{
-    "query": '{user_query(id:94){id, posts{user_id} }}'
-}
+# Via Browser <Br>
+Rota  GET /graphiql<Br>
+EX:<Br>
+http://127.0.0.1:8000/graphiql<Br><br>
+Para consumir o graphql passar a query ou mutation como parametro "query" na rota graphql/<Br>
+EX:<Br>
+http://127.0.0.1:8000/graphql?query=query{%20user_query(id:%2092)%20{%20id,%20name%20}%20}<Br><br>
+
+# Via Postman (Post)<Br>
+Podemos utilizar o método post e mandar o json via body ex:<Br>
+{<Br>
+    "query": '{user_query(id:94){id, posts{user_id} }}'<Br>
+}<Br>
 
 
 
