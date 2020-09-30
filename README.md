@@ -12,7 +12,7 @@
 Estudo realizado em treinamento na Udemy.
 
 Utilizei a lib realizada do Rebing (https://github.com/rebing/graphql-laravel)
-Lá possui a documentação completa.<Br><br>
+Lá possui a documentação completa.<Br>
 
 ### Testando as rotas
 
@@ -22,7 +22,7 @@ EX:<Br>
 http://127.0.0.1:8000/graphiql<Br><br>
 Para consumir o graphql passar a query ou mutation como parametro "query" na rota graphql/<Br>
 EX:<Br>
-http://127.0.0.1:8000/graphql?query=query{%20user_query(id:%2092)%20{%20id,%20name%20}%20}<Br><br>
+http://127.0.0.1:8000/graphql?query=query{%20user_query(id:%2092)%20{%20id,%20name%20}%20}<Br>
 
 * Via Postman (Post)<Br>
 Podemos utilizar o método post e mandar o json via body ex:<Br>
